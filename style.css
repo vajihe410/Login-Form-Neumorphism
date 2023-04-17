@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor: #008DDF;
+    --seconderyColor:#01CEE3;
+    --grayColor: rgb(97, 97, 97);
+    --errorColor:rgb(253, 89, 89);
+    --sucsessColor:rgb(64, 255, 64);
+    --formColor:#ecf0f3;
+    --whiteColor:#f3f3f3;
+}
+form{
+    margin: auto;
+    margin-top: 8px;
+    background-color: var(--formColor);
+    width: 430px;
+    height: 600px;
+    border-radius: 32px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+    padding: 60px 35px 35px 35px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 2px #5f5f5f,
+    0px 0px 0px 5px #ecf0f3,
+    8px 8px 15px #afaaa7,
+    -8px -8px 15px #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    
+}
+.logo img{
+    width: 100px;
+    height: 90px;
+}
+h1{
+   margin-top: 16px;
+   margin-bottom: 32px;
+    text-align: center;
+    color:var(--grayColor);
+
+}
+.username,.password{
+    box-shadow: inset 8px 8px 8px #cbced1,
+    inset -8px -8px 8px #fff;
+    border-radius: 16px;
+    height: 45px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+}
+.password{
+    margin-top: 25px;
+}
+svg{
+    color: var(--grayColor);
+}
+input{
+ outline: none;   
+ border: none;
+ width: 317px;
+ height: 34px;
+ margin-left: 8px;
+ font-size: 16px;
+ background: none;
+ color: var(--grayColor);
+}
+.username-status,
+.password-status{
+    display: inline-block;
+    margin:8px 0;
+    color: var(--errorColor);
+    margin-left: 17px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--whiteColor);
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3;
+    margin-top: 32px;
+}
+button:hover{
+    background-color: var(--seconderyColor);
+}
+.forget{
+    color: var(--grayColor);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.forget span{
+    font-weight: bold;
+    color: black;
+    padding: 0 2px;
+}
+.button-status{
+    color: var(--sucsessColor);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
